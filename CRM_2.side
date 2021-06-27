@@ -1,0 +1,161 @@
+{
+  "id": "4de02555-8d2b-44ed-90ca-dffd48602ddf",
+  "version": "2.0",
+  "name": "CRM_2",
+  "url": "https://crm.geekbrains.space/",
+  "tests": [{
+    "id": "3309736b-d64f-4eb3-8dbd-fc26177e17e0",
+    "name": "Add Contacts",
+    "commands": [{
+      "id": "4bfbf12e-1684-411f-93dc-65043ebae80f",
+      "comment": "",
+      "command": "open",
+      "target": "https://crm.geekbrains.space/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6762d93-d2d0-4bc7-a1d7-4f1016ba1f1d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h2[@class='title']",
+      "targets": [],
+      "value": "Логин"
+    }, {
+      "id": "a594de4a-4daf-470a-bccd-d86280d55404",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='_username']",
+      "targets": [],
+      "value": "Applanatest1"
+    }, {
+      "id": "dbcbbdb3-7991-4168-b822-df34cb734846",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='_password']",
+      "targets": [],
+      "value": "Student2020!"
+    }, {
+      "id": "6d688528-2400-478b-bc2a-097a0db786cf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@name='_submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72cdcabf-1c41-4f0c-9c27-bc395ba2e222",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//li[@id=\"user-menu\"]/a",
+      "targets": [],
+      "value": "Applanatest1 Applanatest1 Applanatest1           "
+    }, {
+      "id": "60832a31-4d22-4b66-82cc-bce72b4a90aa",
+      "comment": "",
+      "command": "open",
+      "target": "https://crm.geekbrains.space/contact/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2e5abd8-11d8-4152-bdb3-9f5e6edfa250",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[@class='oro-subtitle']",
+      "targets": [],
+      "value": "Все Контактные лица"
+    }, {
+      "id": "83a19252-57a7-4262-b5a3-a81971a05127",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[@title='Создать контактное лицо']",
+      "targets": [],
+      "value": "Создать контактное лицо"
+    }, {
+      "id": "b98033aa-992c-4cff-8d68-b25b63b7ea37",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@class='btn back icons-holder-text ']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d43f8e1-ffe1-434a-827f-bc61277dad37",
+      "comment": "",
+      "command": "open",
+      "target": "https://crm.geekbrains.space/contact/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "524fb2e5-ae25-4ab2-b970-cf6422550163",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[@class='user-name']",
+      "targets": [],
+      "value": "Создать контактное лицо"
+    }, {
+      "id": "954ddc22-5298-49fd-af76-5f1a00cbd769",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='crm_contact[lastName]']",
+      "targets": [],
+      "value": "Owl"
+    }, {
+      "id": "e472808d-6fdd-43ce-ba75-785e6d872838",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='crm_contact[firstName]']",
+      "targets": [],
+      "value": "Watzlaw"
+    }, {
+      "id": "148d2957-d500-43d8-a572-401b2c36e1ba",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//span[@class='select2-chosen']",
+      "targets": [],
+      "value": "1234"
+    }, {
+      "id": "dcef9ab5-e672-4b92-bd0a-be8e441779ff",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='crm_contact[jobTitle]']",
+      "targets": [],
+      "value": "QA engineer"
+    }, {
+      "id": "75b4357b-d4a3-4ff6-b34a-5427ecac30e4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@class='btn btn-success action-button']",
+      "targets": [],
+      "value": "Сохранить и закрыть"
+    }, {
+      "id": "90ebb417-3b11-4ae9-9d1f-2e9f36a82844",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"flash-messages\"]/div/div",
+      "targets": [],
+      "value": "Контактное лицо сохранено"
+    }, {
+      "id": "8765b769-eede-498d-bad4-0aa559625ea1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//button[@class='close']",
+      "targets": [],
+      "value": "Организация*: Значение не должно быть пустым."
+    }, {
+      "id": "ee84e78e-091c-49cd-8c46-e1263a22f380",
+      "comment": "",
+      "command": "//assertText",
+      "target": "xpath=//h1[@class='oro-subtitle']",
+      "targets": [],
+      "value": "Все Контактные лица"
+    }]
+  }],
+  "suites": [{
+    "id": "934cf16a-1373-455f-a2a5-9b940dfc4f4b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3309736b-d64f-4eb3-8dbd-fc26177e17e0"]
+  }],
+  "urls": ["https://crm.geekbrains.space/"],
+  "plugins": []
+}
