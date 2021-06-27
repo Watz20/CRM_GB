@@ -1,0 +1,168 @@
+{
+  "id": "217a4c08-5dca-498d-bea3-a015f7fd4dfd",
+  "version": "2.0",
+  "name": "CRM_Gb1",
+  "url": "https://crm.geekbrains.space",
+  "tests": [{
+    "id": "53e76b7f-8f8f-443d-832a-eb33c406e9ae",
+    "name": "Создать проект",
+    "commands": [{
+      "id": "8f5f223e-e65b-457b-81d1-d8178ac99a17",
+      "comment": "",
+      "command": "open",
+      "target": "https://crm.geekbrains.space/user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79a9d22c-2dec-46b6-8cf7-286d7bdbc179",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h2[@class='title']",
+      "targets": [],
+      "value": " Логин"
+    }, {
+      "id": "4d153215-dc87-4cbb-9f35-7ad408f338b0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='_username']",
+      "targets": [],
+      "value": "Applanatest1"
+    }, {
+      "id": "539a92e2-02e5-46e4-812b-194cda1fac58",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='_password']",
+      "targets": [],
+      "value": "Student2020!"
+    }, {
+      "id": "eb37d007-ca24-477b-aa4a-ba92cdf377d1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@name='_submit']",
+      "targets": [],
+      "value": " "
+    }, {
+      "id": "e014a493-42e0-4d32-8f2a-49adedd94f03",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//li[@id=\"user-menu\"]/a",
+      "targets": [],
+      "value": "Applanatest1 Applanatest1 Applanatest1"
+    }, {
+      "id": "0a344752-a266-4592-9682-38ec637483f5",
+      "comment": "",
+      "command": "open",
+      "target": "https://crm.geekbrains.space/project/my",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12dfdbba-2a90-4132-bd91-348a83c15061",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"container\"]/div[1]/div/div/div[2]/div/div/a",
+      "targets": [],
+      "value": "Создать проект"
+    }, {
+      "id": "169b08e8-f024-4f7f-b2f0-1860590e2b61",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"container\"]/div[1]/div/div/div[2]/div/div/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7f58bc6-9a74-43aa-84fa-f7d47179d7b3",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='crm_project[name]']",
+      "targets": [],
+      "value": "CRM"
+    }, {
+      "id": "6b83c695-f445-4077-b69b-ccbe22b3eac8",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//span[@class='select2-chosen']",
+      "targets": [],
+      "value": "1234"
+    }, {
+      "id": "681d2ca8-cb77-494c-8f6b-6e30626cbb03",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//span[@class='select2-chosen']",
+      "targets": [],
+      "value": "Ivanov Ivan"
+    }, {
+      "id": "1ed73e61-79b8-40be-9ee2-a6c1bf935001",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//select[@name='crm_project[businessUnit]']",
+      "targets": [],
+      "value": "Research & Development"
+    }, {
+      "id": "2556120e-a79b-422d-8cbd-1dce46713fbf",
+      "comment": "",
+      "command": "type",
+      "target": "//select[@name='crm_project[curator]']",
+      "targets": [],
+      "value": "Амелин Владимир"
+    }, {
+      "id": "b5affba4-8802-462a-bbaa-defb3f36bbf9",
+      "comment": "",
+      "command": "type",
+      "target": " //select[@name='crm_project[rp]']",
+      "targets": [],
+      "value": "Андреев Сергей"
+    }, {
+      "id": "d8cfd3e4-4c4c-4f99-af78-e629dbf8b8bd",
+      "comment": "",
+      "command": "type",
+      "target": " //select[@name='crm_project[administrator]']",
+      "targets": [],
+      "value": "Карпова Ирина"
+    }, {
+      "id": "45b12d49-6d40-4adc-9bf0-a4f559df9cd5",
+      "comment": "",
+      "command": "type",
+      "target": " //select[@name='crm_project[manager]']",
+      "targets": [],
+      "value": "Амелина Светлана"
+    }, {
+      "id": "9ff5a446-8f4b-4dd8-aff4-f245aca287c3",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@class='btn btn-success action-button']",
+      "targets": [],
+      "value": "Сохранить и закрыть"
+    }, {
+      "id": "6b5cb90b-7939-4580-a5aa-940839a890c3",
+      "comment": "",
+      "command": "open",
+      "target": "https://crm.geekbrains.space/project/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0071b8d8-4f3c-473e-988e-91b159187438",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[@class='oro-subtitle']",
+      "targets": [],
+      "value": "Все Проекты"
+    }, {
+      "id": "e00bc0f3-4df4-48fd-a542-7c2f47d3816d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"flash-messages\"]/div/div",
+      "targets": [],
+      "value": "Проект создан"
+    }]
+  }],
+  "suites": [{
+    "id": "1856671c-5619-4d28-b9b6-fc1dc5e7e92a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["53e76b7f-8f8f-443d-832a-eb33c406e9ae"]
+  }],
+  "urls": ["https://crm.geekbrains.space/"],
+  "plugins": []
+}
